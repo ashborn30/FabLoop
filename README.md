@@ -1,6 +1,43 @@
-# FabLoop — standalone EfficientAD baseline
+# FabLoop — software-only baselines
 
 Pipeline này huấn luyện **một model EfficientAD riêng cho từng `pcb1`–`pcb4`** bằng implementation chính thức của Anomalib 2.6.0. Teacher PDN pretrained được nạp bởi Anomalib, đóng băng hoàn toàn và được kiểm tra checksum; chỉ Student và Autoencoder nằm trong optimizer. Pipeline độc lập với `train.py` của RF-DETR.
+
+## Photometric stereo validation (Người 1)
+
+Nhánh hình học photometric stereo được tách khỏi anomaly detection. Script DiLiGenT adapter nằm ở `src/fabloop/photometric_stereo/diligent_validate.py` và dùng `yasumat/RobustPhotometricStereo` như thư viện ngoài, không copy lại thuật toán vào repo này.
+
+Chuẩn bị dependency nghiên cứu và dữ liệu:
+
+```bash
+pip install -r requirements.txt
+git clone https://github.com/yasumat/RobustPhotometricStereo.git third_party/RobustPhotometricStereo
+```
+
+Đặt một object DiLiGenT dưới `data/diligent/<object>/` sao cho thư mục có `mask.png`, `light_directions.txt`, `Normal_gt.mat`, và ảnh quan sát. Nếu dataset có `filenames.txt`/`light_intensities.txt`, script sẽ tự dùng để đọc đúng thứ tự và chuẩn hoá cường độ đèn.
+
+Chạy test sát điều kiện hộp 4 đèn:
+
+```bash
+PYTHONPATH=src python -m fabloop.photometric_stereo.diligent_validate \
+  --object-dir data/diligent/BallPNG \
+  --rps-root third_party/RobustPhotometricStereo \
+  --image-counts 4 \
+  --solvers l2 l1
+```
+
+Chạy full 96 ảnh với L2 để đối chiếu baseline công bố của DiLiGenT:
+
+```bash
+PYTHONPATH=src python -m fabloop.photometric_stereo.diligent_validate \
+  --object-dir data/diligent/BallPNG \
+  --rps-root third_party/RobustPhotometricStereo \
+  --image-counts all \
+  --solvers l2
+```
+
+Output nằm mặc định ở `outputs/photometric_stereo/<object>/`, gồm normal-map RGB, normal-map GT, angular-error heatmap, height-map Frankot-Chellappa, mesh PyVista nếu môi trường render hỗ trợ, và `summary.csv`/`summary.json`. Bảng baseline L2 96 ảnh được lưu ở `references/diligent_main_l2_baseline.csv`; script chỉ attach số baseline khi object/solver/số ảnh khớp, không tự đặt ngưỡng pass/fail.
+
+Chi tiết workflow ở `docs/photometric_stereo_diligent.md`.
 
 ## Chuẩn bị
 
