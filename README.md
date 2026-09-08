@@ -38,6 +38,15 @@ Config mặc định dùng CSV đã có tại `third-party/spot-diff/split_csv/1
 
 Lệnh đầu xuất một board để xem trước; lệnh sau xử lý toàn bộ `data/PCBA_4Light_edited`. Xem `normal_rgb.png`, `height_preview.png`, `pseudo3d.png` và `report.json` trong thư mục từng board. `summary.json` ghi các board thất bại. Hướng dẫn tham số và giới hạn nằm trong [quy trình PCBA](docs/photometric_stereo_pcba.md).
 
+Để xem relighting pseudo-3D nhẹ theo kiểu normal mapping, dùng viewer Qt đọc `normal_est.npy`/`normal_l2_nominal.npy` và `albedo*.npy/png` trong từng folder PCB. Slider `azimuth` và `elevation` cập nhật ảnh 2D bằng công thức `max(0, normal dot L) * albedo`, không dựng mesh PyVistaQt:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\launch_pseudo3d_viewer.py --results-root outputs/pcba_photometric_preview
+.\.venv\Scripts\python.exe scripts\export_pseudo3d_relight_previews.py --results-root outputs/pcba_photometric_preview --output-dir outputs/pcba_relight_preview
+```
+
+Nếu dashboard Qt đã có `QTabWidget`, nhúng widget bằng `add_pseudo3d_tab(tabs, results_root)` từ `fabloop.photometric_stereo.pseudo3d_viewer`.
+
 Bản gốc đầy đủ của thư mục con, gồm lịch sử Git, được lưu tại `archives/FabLoop_before_merge_2026-09-08.zip`; [manifest migration](docs/migration/FabLoop_migration_manifest.json) ghi hash và mapping file. Tài liệu `docs/migration/FabLoop_original_*` chỉ lưu lịch sử; dùng các lệnh trong README chính.
 
 Thư mục `FabLoop` không còn ở gốc dự án: bản gốc được chuyển nguyên vẹn vào `archives/FabLoop_retired` vì công cụ chặn lệnh xóa đệ quy (`blocked by policy`). Đã xác minh hash cả bản ZIP và 42 file được chuyển. [Kiểm tra migration](docs/preflight/photometric_migration_validation.json) ghi nhận **40 tests PASS**, pip check sạch và smoke test L2/L1 tổng hợp tại thời điểm migration. Chưa chạy DiLiGenT thật hoặc training.

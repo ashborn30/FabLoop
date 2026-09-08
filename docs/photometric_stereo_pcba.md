@@ -61,6 +61,47 @@ valid_mask.png       Vùng hợp lệ số học, không phải mask board groun
 report.json          Giả định, chất lượng căn chỉnh và provenance
 ```
 
+## Pseudo-3D Viewer realtime bằng normal mapping
+
+Viewer nhẹ nằm ở `src/fabloop/photometric_stereo/pseudo3d_viewer.py`. Nó đọc từng folder PCB có `normal_est.npy` hoặc `normal_l2_nominal.npy` cùng `albedo.npy`/`albedo_l2_nominal.npy`/ảnh albedo tương đương, rồi render ảnh relight 2D:
+
+```text
+shading(x,y) = max(0, normal(x,y) . L_virtual) * albedo(x,y)
+```
+
+`L_virtual` lấy từ hai slider:
+
+- `azimuth`: 0-360 độ trong mặt phẳng ảnh, frame x sang phải/y xuống.
+- `elevation`: 0-90 độ, 90 là chiếu từ phía camera.
+
+Chạy viewer độc lập:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\launch_pseudo3d_viewer.py --results-root outputs/pcba_photometric_preview
+```
+
+Liệt kê board mà không mở GUI:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\launch_pseudo3d_viewer.py --results-root outputs/pcba_photometric_preview --list-only
+```
+
+Xuất một ảnh relight cho từng board để review hàng loạt:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\export_pseudo3d_relight_previews.py --results-root outputs/pcba_photometric_preview --output-dir outputs/pcba_relight_preview --azimuth 315 --elevation 45
+```
+
+Nhúng vào dashboard Qt đã có:
+
+```python
+from fabloop.photometric_stereo.pseudo3d_viewer import add_pseudo3d_tab
+
+add_pseudo3d_tab(tabs, "outputs/pcba_photometric_preview")
+```
+
+Viewer chỉ là relight định tính để xem nổi khối từ normal map; nó không thay thế calibration, MAE, mask ground truth hoặc phép đo 3D metric.
+
 `summary.json` tại thư mục output ghi số board xuất được/thất bại và lý do. Exit 0 nghĩa là mọi board đã xuất bản thử; không phải gate chất lượng hình học. Exit 1 nếu có lỗi. Lệnh giữ output cũ: muốn chạy lại, chọn tên `--output-root` mới.
 
 Đã chạy thử thực tế PCB1 ở cạnh dài 1024, xuất đủ 9 file tại `outputs/pcba_preview_smoke_PCB1/PCB1/`; toàn bộ 50 tests đã PASS. Phép căn chỉnh ảnh R ước lượng xoay gần 180° và height hiện có thành phần cong quy mô lớn. Với ánh sáng chưa hiệu chuẩn, không diễn giải dạng cong đó thành độ cong thật của board. Chưa chạy batch 34 board; lệnh batch phía trên để người dùng tự chạy.
