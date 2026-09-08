@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-09-08T07:36:38.834311+00:00",
+  "executable": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Scripts\\python.exe",
+  "pip_check_exit_code": 0,
+  "pip_check_stdout": "No broken requirements found.",
+  "pip_check_stderr": "",
+  "install_exit_code": 0,
+  "requirements_dry_run": "Would make no changes",
+  "cli_help_exit_code": 0,
+  "pipeline_stages_run": []
+}

@@ -1,0 +1,71 @@
+# Python environments, bytecode and tool caches
+.venv/
+.venv-*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local environment values; keep shareable templates
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Captures and generated data; retain manually curated board annotations
+/data/*
+!/data/processed/
+/data/processed/*
+!/data/processed/pcba_4light/
+/data/processed/pcba_4light/*
+!/data/processed/pcba_4light/labels.json
+
+# Experiment outputs, downloaded dependencies and migration backups
+/runs/
+/outputs/
+/archives/
+/third-party/
+/third_party/
+/checkpoints/
+/weights/
+/pre_trained/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+
+# Runtime logs and legacy generated reports
+*.log
+/run_log.txt
+/photometric_summary.csv
+/photometric_summary.json
+
+# Editor and operating-system files; keep shared VS Code configuration
+.idea/
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/extensions.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Keep src/, configs/, tests/, references/ and docs/ versionable.
+# CSV/JSON/NumPy files are not globally ignored: they can hold source metadata.

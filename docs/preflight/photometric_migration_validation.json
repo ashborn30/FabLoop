@@ -1,0 +1,156 @@
+{
+  "created_at_utc": "2026-09-08T09:31:36.189233+00:00",
+  "code_validation_status": "PASS",
+  "dataset_training_readiness": "BLOCKED_METADATA_AND_ALIGNMENT",
+  "tests": {
+    "count": 40,
+    "elapsed_seconds": 8.508,
+    "result": "PASS",
+    "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -p \"test_*.py\" -v"
+  },
+  "pip_check": "No broken requirements found",
+  "synthetic_only_cli_smoke": [
+    {
+      "object": "syntheticperiodic",
+      "solver": "l2",
+      "image_set": "custom_indices",
+      "image_count": 4,
+      "image_indices_zero_based": "0,1,2,3",
+      "mae_deg": 0.0005817664340457541,
+      "elapsed_sec": 0.009929199994076043,
+      "output_dir": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2",
+      "outputs": {
+        "normal_est_npy": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\normal_est.npy",
+        "normal_est_rgb": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\normal_est_rgb.png",
+        "normal_gt_rgb": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\normal_gt_rgb.png",
+        "angular_error_npy": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\angular_error_deg.npy",
+        "angular_error_heatmap": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\angular_error_heatmap.png",
+        "height_npy": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\height_frankot_chellappa.npy",
+        "height_png": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l2\\height_frankot_chellappa.png"
+      },
+      "light_geometry": {
+        "rank": 3,
+        "condition_number": 2.4494897427831774,
+        "azimuth_deg": [
+          0.0,
+          180.0,
+          90.0,
+          -90.0
+        ],
+        "elevation_deg": [
+          60.00000000000001,
+          60.00000000000001,
+          60.00000000000001,
+          60.00000000000001
+        ],
+        "directions": [
+          [
+            0.5000000000000001,
+            0.0,
+            0.8660254037844387
+          ],
+          [
+            -0.5000000000000001,
+            0.0,
+            0.8660254037844387
+          ],
+          [
+            0.0,
+            0.5000000000000001,
+            0.8660254037844387
+          ],
+          [
+            0.0,
+            -0.5000000000000001,
+            0.8660254037844387
+          ]
+        ]
+      },
+      "selection": "explicit_indices",
+      "intensity_normalization": "per_channel_calibrated",
+      "height_method": "Frankot-Chellappa, periodic FFT, zero gradients outside mask",
+      "height_units": "relative_pixel_units_not_metric_3d",
+      "height_boundary_caveat": "Zero outside mask participates in FFT; boundary artifacts and missing mean slope are possible.",
+      "normal_coordinates": "x-right, y-down, z-toward-camera",
+      "baseline_status": "not_applicable"
+    },
+    {
+      "object": "syntheticperiodic",
+      "solver": "l1",
+      "image_set": "custom_indices",
+      "image_count": 4,
+      "image_indices_zero_based": "0,1,2,3",
+      "mae_deg": 0.0005817663947612885,
+      "elapsed_sec": 0.02776970001286827,
+      "output_dir": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1",
+      "outputs": {
+        "normal_est_npy": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\normal_est.npy",
+        "normal_est_rgb": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\normal_est_rgb.png",
+        "normal_gt_rgb": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\normal_gt_rgb.png",
+        "angular_error_npy": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\angular_error_deg.npy",
+        "angular_error_heatmap": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\angular_error_heatmap.png",
+        "height_npy": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\height_frankot_chellappa.npy",
+        "height_png": "D:\\Visual studio code\\FabLoop_VJSS26\\outputs\\photometric_stereo_smoke\\validation\\custom_indices\\l1\\height_frankot_chellappa.png"
+      },
+      "light_geometry": {
+        "rank": 3,
+        "condition_number": 2.4494897427831774,
+        "azimuth_deg": [
+          0.0,
+          180.0,
+          90.0,
+          -90.0
+        ],
+        "elevation_deg": [
+          60.00000000000001,
+          60.00000000000001,
+          60.00000000000001,
+          60.00000000000001
+        ],
+        "directions": [
+          [
+            0.5000000000000001,
+            0.0,
+            0.8660254037844387
+          ],
+          [
+            -0.5000000000000001,
+            0.0,
+            0.8660254037844387
+          ],
+          [
+            0.0,
+            0.5000000000000001,
+            0.8660254037844387
+          ],
+          [
+            0.0,
+            -0.5000000000000001,
+            0.8660254037844387
+          ]
+        ]
+      },
+      "selection": "explicit_indices",
+      "intensity_normalization": "per_channel_calibrated",
+      "height_method": "Frankot-Chellappa, periodic FFT, zero gradients outside mask",
+      "height_units": "relative_pixel_units_not_metric_3d",
+      "height_boundary_caveat": "Zero outside mask participates in FFT; boundary artifacts and missing mean slope are possible.",
+      "normal_coordinates": "x-right, y-down, z-toward-camera",
+      "baseline_status": "not_applicable"
+    }
+  ],
+  "diligent_real_dataset_run": false,
+  "pcba_real_reconstruction_run": false,
+  "training_run": false,
+  "source_images_modified": false,
+  "baseline_csv_changed": false,
+  "original_source_retained": "archives/FabLoop_retired",
+  "archive": "archives/FabLoop_before_merge_2026-09-08.zip",
+  "recursive_deletion": "blocked by policy; original relocated intact instead",
+  "evidence": [
+    "references/diligent_baseline_verification.json",
+    "references/robust_photometric_stereo_source.json",
+    "docs/preflight/pcba_4light_readiness.json",
+    "docs/migration/FabLoop_migration_manifest.json"
+  ]
+}

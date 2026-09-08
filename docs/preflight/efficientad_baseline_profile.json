@@ -1,0 +1,249 @@
+{
+  "created_at_utc": "2026-09-08T08:06:52.436808+00:00",
+  "purpose": "EfficientAD-S architecture baseline; random weights and synthetic input only",
+  "source": {
+    "copied_file": "src/models/efficientad_slim/torch_model.py",
+    "copied_sha256": "8f80c2db5e546e5209f105c757d8c88c70c48e86bcf1d036b797fff88be3bd08",
+    "installed_file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\anomalib\\models\\image\\efficient_ad\\torch_model.py",
+    "installed_sha256": "8f80c2db5e546e5209f105c757d8c88c70c48e86bcf1d036b797fff88be3bd08",
+    "copied_source_matches_installed": true,
+    "source_manifest": "src/models/efficientad_slim/SOURCE.json",
+    "source_manifest_verified": true,
+    "config_file": "D:\\Visual studio code\\FabLoop_VJSS26\\configs\\efficientad.yaml",
+    "config_sha256": "1e2288ddec105143130e203f519026d5517d480030f080de4c428b849bab9e8f"
+  },
+  "environment": {
+    "python": "3.12.13 (main, Mar 24 2026, 22:57:53) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Scripts\\python.exe",
+    "torch": "2.11.0+cu128",
+    "anomalib": "2.6.0",
+    "fvcore": "0.1.5.post20221221"
+  },
+  "execution": {
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4,
+    "seed": 42,
+    "input_shape": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "input_distribution": "uniform [0, 1); each original module applies its ImageNet normalization",
+    "model_size": "small",
+    "padding": false,
+    "pad_maps": true,
+    "eval_mode": true,
+    "grad_enabled_during_profile": false,
+    "teacher_frozen": true,
+    "pretrained_checkpoint_loaded": false,
+    "training_or_dataset_inference_run": false
+  },
+  "counting_policy": {
+    "tool": "fvcore.nn.FlopCountAnalysis with unmodified default operator handlers",
+    "multiply_add_flops": 1,
+    "supported_flops_are_not_all_operation_flops": true,
+    "convolution_flops": "Convolution multiply-add count; bias additions excluded by fvcore",
+    "unsupported_operator_occurrences": "Counts of traced operator nodes, not element counts or FLOPs",
+    "ignored_operators": "fvcore deliberately assigns no FLOPs to ReLU, dropout and many shape/view/copy operations. Dropout is an identity in eval mode. See the installed policy list below; membership in that list does not mean the operator occurred in this trace.",
+    "fvcore_ignored_operator_types_policy": [
+      "aten::Int",
+      "aten::ScalarImplicit",
+      "aten::__and__",
+      "aten::arange",
+      "aten::bitwise_not",
+      "aten::cat",
+      "aten::chunk",
+      "aten::clamp",
+      "aten::clamp_",
+      "aten::constant_pad_nd",
+      "aten::contiguous",
+      "aten::copy_",
+      "aten::detach",
+      "aten::dropout",
+      "aten::empty",
+      "aten::eq",
+      "aten::expand",
+      "aten::flatten",
+      "aten::floor",
+      "aten::floor_divide",
+      "aten::full",
+      "aten::full_like",
+      "aten::gather",
+      "aten::ge",
+      "aten::gt",
+      "aten::index",
+      "aten::index_put_",
+      "aten::masked_fill",
+      "aten::max",
+      "aten::narrow",
+      "aten::new_empty",
+      "aten::new_full",
+      "aten::new_zeros",
+      "aten::nonzero",
+      "aten::ones",
+      "aten::permute",
+      "aten::relu",
+      "aten::relu_",
+      "aten::remainder",
+      "aten::reshape",
+      "aten::roll",
+      "aten::select",
+      "aten::size",
+      "aten::slice",
+      "aten::split",
+      "aten::split_with_sizes",
+      "aten::squeeze",
+      "aten::stack",
+      "aten::t",
+      "aten::to",
+      "aten::transpose",
+      "aten::type_as",
+      "aten::unbind",
+      "aten::unsqueeze",
+      "aten::unsqueeze_",
+      "aten::view",
+      "aten::zeros",
+      "aten::zeros_like"
+    ],
+    "module_breakdown": "Inclusive nested-module totals; do not sum parent and child entries",
+    "deployment_core_scope": "Sum of Teacher + Student + Autoencoder feature-network forwards. Includes supported operators in each module's original forward. Excludes feature statistics normalization, feature distances, map upsampling/fusion, SAM3, external preprocessing, data loading and application overhead. This is not a full FabLoop inference cost or a latency measurement."
+  },
+  "modules": {
+    "teacher": {
+      "parameters": 2694144,
+      "output_shape": [
+        1,
+        384,
+        56,
+        56
+      ],
+      "supported_flops": 15310903296,
+      "convolution_flops": 15310903296,
+      "supported_flops_by_operator": {
+        "conv": 15310903296
+      },
+      "supported_flops_by_module": {
+        "": 15310903296,
+        "avgpool1": 0,
+        "avgpool2": 0,
+        "conv1": 393271296,
+        "conv2": 7931953152,
+        "conv3": 2053177344,
+        "conv4": 4932501504
+      },
+      "unsupported_operator_occurrences": {
+        "aten::avg_pool2d": 2,
+        "aten::div": 1,
+        "aten::sub": 1
+      },
+      "uncalled_modules": []
+    },
+    "student": {
+      "parameters": 4267392,
+      "output_shape": [
+        1,
+        768,
+        56,
+        56
+      ],
+      "supported_flops": 20243404800,
+      "convolution_flops": 20243404800,
+      "supported_flops_by_operator": {
+        "conv": 20243404800
+      },
+      "supported_flops_by_module": {
+        "": 20243404800,
+        "avgpool1": 0,
+        "avgpool2": 0,
+        "conv1": 393271296,
+        "conv2": 7931953152,
+        "conv3": 2053177344,
+        "conv4": 9865003008
+      },
+      "unsupported_operator_occurrences": {
+        "aten::avg_pool2d": 2,
+        "aten::div": 1,
+        "aten::sub": 1
+      },
+      "uncalled_modules": []
+    },
+    "autoencoder": {
+      "parameters": 1096320,
+      "output_shape": [
+        1,
+        384,
+        56,
+        56
+      ],
+      "supported_flops": 2399267840,
+      "convolution_flops": 2392981504,
+      "supported_flops_by_operator": {
+        "conv": 2392981504,
+        "upsample_bilinear2d": 6286336
+      },
+      "supported_flops_by_module": {
+        "": 2399267840,
+        "autoencoder": 2399267840,
+        "autoencoder.decoder": 2252205056,
+        "autoencoder.decoder.deconv1": 1048576,
+        "autoencoder.decoder.deconv2": 5308416,
+        "autoencoder.decoder.deconv3": 16777216,
+        "autoencoder.decoder.deconv4": 71368704,
+        "autoencoder.decoder.deconv5": 268435456,
+        "autoencoder.decoder.deconv6": 1073741824,
+        "autoencoder.decoder.deconv7": 115605504,
+        "autoencoder.decoder.deconv8": 693633024,
+        "autoencoder.decoder.dropout1": 0,
+        "autoencoder.decoder.dropout2": 0,
+        "autoencoder.decoder.dropout3": 0,
+        "autoencoder.decoder.dropout4": 0,
+        "autoencoder.decoder.dropout5": 0,
+        "autoencoder.decoder.dropout6": 0,
+        "autoencoder.encoder": 147062784,
+        "autoencoder.encoder.enconv1": 25165824,
+        "autoencoder.encoder.enconv2": 67108864,
+        "autoencoder.encoder.enconv3": 33554432,
+        "autoencoder.encoder.enconv4": 16777216,
+        "autoencoder.encoder.enconv5": 4194304,
+        "autoencoder.encoder.enconv6": 262144
+      },
+      "unsupported_operator_occurrences": {
+        "aten::div": 1,
+        "aten::sub": 1
+      },
+      "uncalled_modules": []
+    }
+  },
+  "student_only": {
+    "parameters": 4267392,
+    "supported_flops": 20243404800,
+    "convolution_flops": 20243404800,
+    "future_reduction_targets": {
+      "parameters_fraction_min": 0.4,
+      "flops_fraction_min": 0.3
+    }
+  },
+  "deployment_core_teacher_student_autoencoder": {
+    "parameters": 8057856,
+    "supported_flops": 37953575936,
+    "convolution_flops": 37947289600,
+    "supported_flops_by_operator": {
+      "conv": 37947289600,
+      "upsample_bilinear2d": 6286336
+    },
+    "unsupported_operator_occurrences": {
+      "aten::avg_pool2d": 4,
+      "aten::div": 3,
+      "aten::sub": 3
+    }
+  },
+  "calibration_parameter_elements": {
+    "mean_std": 768,
+    "quantiles": 4
+  },
+  "efficientad_model_parameter_elements_including_calibration": 8058628,
+  "quality_metrics": null,
+  "compression_results": null
+}

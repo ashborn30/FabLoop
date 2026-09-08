@@ -1,0 +1,236 @@
+{
+  "created_at": "2026-09-08T08:37:39.042982+00:00",
+  "status": "PASS",
+  "dummy_input": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "padding": false,
+  "shape_reports": {
+    "slim_cpu": {
+      "status": "PASS",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "features": {
+        "teacher": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student": [
+          1,
+          768,
+          56,
+          56
+        ],
+        "autoencoder": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student_teacher": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student_autoencoder": [
+          1,
+          384,
+          56,
+          56
+        ]
+      },
+      "differences": {
+        "T-S_T": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "T-A": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "A-S_A": [
+          1,
+          384,
+          56,
+          56
+        ]
+      },
+      "finite": true,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "fixed_groups": {
+        "teacher": 384,
+        "student_teacher": 384,
+        "student_autoencoder": 384,
+        "autoencoder": 384
+      },
+      "description": "Raw-feature shape/subtraction gate; no calibration or loss rewrite."
+    },
+    "slim_cuda": {
+      "status": "PASS",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "features": {
+        "teacher": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student": [
+          1,
+          768,
+          56,
+          56
+        ],
+        "autoencoder": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student_teacher": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student_autoencoder": [
+          1,
+          384,
+          56,
+          56
+        ]
+      },
+      "differences": {
+        "T-S_T": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "T-A": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "A-S_A": [
+          1,
+          384,
+          56,
+          56
+        ]
+      },
+      "finite": true,
+      "device": "cuda:0",
+      "dtype": "torch.float32",
+      "fixed_groups": {
+        "teacher": 384,
+        "student_teacher": 384,
+        "student_autoencoder": 384,
+        "autoencoder": 384
+      },
+      "description": "Raw-feature shape/subtraction gate; no calibration or loss rewrite."
+    },
+    "baseline_cpu": {
+      "status": "PASS",
+      "input_shape": [
+        1,
+        3,
+        256,
+        256
+      ],
+      "features": {
+        "teacher": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student": [
+          1,
+          768,
+          56,
+          56
+        ],
+        "autoencoder": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student_teacher": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "student_autoencoder": [
+          1,
+          384,
+          56,
+          56
+        ]
+      },
+      "differences": {
+        "T-S_T": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "T-A": [
+          1,
+          384,
+          56,
+          56
+        ],
+        "A-S_A": [
+          1,
+          384,
+          56,
+          56
+        ]
+      },
+      "finite": true,
+      "device": "cpu",
+      "dtype": "torch.float32",
+      "fixed_groups": {
+        "teacher": 384,
+        "student_teacher": 384,
+        "student_autoencoder": 384,
+        "autoencoder": 384
+      },
+      "description": "Raw-feature shape/subtraction gate; no calibration or loss rewrite."
+    }
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -p \"test_*.py\" -v",
+    "count": 14,
+    "elapsed_seconds": 6.28,
+    "result": "PASS"
+  },
+  "mandatory_training_hook": "src/trainer.py: before pretrained Teacher, Imagenette preparation, feature statistics, and optimizer",
+  "pipeline_training_run": false,
+  "pretrained_weights_loaded": false,
+  "loss_formulas_changed": false
+}

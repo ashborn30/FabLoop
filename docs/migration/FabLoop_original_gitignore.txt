@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Large or generated project assets
+data/
+outputs/
+
+# External dependency cloned locally; keep it out of this repository.
+third_party/RobustPhotometricStereo/

@@ -1,0 +1,21 @@
+{
+  "upstream_url": "https://github.com/yasumat/RobustPhotometricStereo",
+  "commit": "f03aa95b57e746a7d31df76b1c0fa0a83584a3c1",
+  "checked_at_utc": "2026-09-08T09:18:40.792902+00:00",
+  "local_root": "third-party/RobustPhotometricStereo",
+  "license_notice": "Upstream README states GNU General Public License; retain upstream attribution and conditions.",
+  "files": {
+    "rps.py": "17c99a7720bb5dbfef6e978946192b5118b7f5b2cf6200ab8b36d1188ff45303",
+    "psutil.py": "51708932a3ac27a1c4ee3092cd6ebfe5532994485be92868a9bfd874ae1d5660",
+    "rpsnumerics.py": "69f3476ef7f22b366e587ecfcc079f9ea75bfe3e111c667cb7cc9b7d7198a2c4",
+    "README.md": "b1a6ddbd14b542efa9ee8db629bc94a03781fb11a4e2cfbcc7648bf559602dee"
+  },
+  "core_dependencies_already_present": [
+    "numpy",
+    "scipy",
+    "opencv-python-headless",
+    "scikit-learn"
+  ],
+  "optional_mesh_dependency": "pyvista; not required with --skip-mesh",
+  "training_run": false
+}

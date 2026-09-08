@@ -1,0 +1,67 @@
+dataset:
+  name: MVTecAD
+  root: data/mvtec_ad
+  category: transistor
+
+data:
+  calibration_source: train_normal
+  calibration_ratio: 0.1
+  split_seed: 42
+  split_manifest: outputs/efficientad_diagnostic/transistor/manifests/transistor.json
+  num_workers: 4
+  image_size: [256, 256]
+
+imagenette:
+  root: data/imagenette
+
+model:
+  size: small
+  teacher_out_channels: 384
+  padding: false
+  pad_maps: true
+
+training:
+  iterations: 70000
+  batch_size: 1
+  optimizer: Adam
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  scheduler:
+    type: StepLR
+    step_size: 66500
+    gamma: 0.1
+  checkpoint_interval: 5000
+  progress_refresh_interval: 10
+
+calibration:
+  lower_quantile: 0.9
+  upper_quantile: 0.995
+  threshold_quantile: 0.995
+
+evaluation:
+  aupro_fpr_limit: 0.3
+  save_visualizations: true
+  target_fpr: 0.10
+  threshold_policy: max_recall_under_target_fpr
+  deployment_threshold_policy: percentile_of_calibration_normal
+
+benchmark:
+  warmup_iterations: 100
+  measured_iterations: 1000
+
+reproduction_gate:
+  required_seeds: [42]
+  mean_image_auroc_min: 0.90
+  category_image_auroc_min: 0.85
+  seed_std_max: 0.02
+  require_teacher_checksum: true
+  require_validation_normal_calibration: true
+  require_visual_review: true
+  visual_review_pass: true
+  require_validator_pass: true
+
+seed: 42
+device: cuda
+deterministic: true
+
+output_dir: outputs/efficientad_diagnostic/transistor

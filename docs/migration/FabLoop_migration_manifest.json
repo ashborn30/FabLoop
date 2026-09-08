@@ -1,0 +1,281 @@
+{
+  "created_at_utc": "2026-09-08T09:15:41.874207+00:00",
+  "source": "D:\\Visual studio code\\FabLoop_VJSS26\\FabLoop",
+  "archive": "archives\\FabLoop_before_merge_2026-09-08.zip",
+  "archive_sha256": "ec3141f0b562bef797b081ba58d361245e93aab13d35cfdb4bbd5ea91fa5cbdb",
+  "archive_verified": true,
+  "original_files": [
+    {
+      "path": ".git/config",
+      "bytes": 391,
+      "sha256": "d19c101a65c4abdd1229f01df8a4d68f8da1eb0d00b77e141d67309014baadcb"
+    },
+    {
+      "path": ".git/description",
+      "bytes": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee"
+    },
+    {
+      "path": ".git/FETCH_HEAD",
+      "bytes": 222,
+      "sha256": "07e602e808407bf8cf6bacacea0e19fe0f811f2e58532b4d16a14d566aa16cc9"
+    },
+    {
+      "path": ".git/gk/config",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".git/HEAD",
+      "bytes": 38,
+      "sha256": "00e7ef062b2efdebf4bf38a35c528e5a0b25214dec6cd21868e444618a6a164c"
+    },
+    {
+      "path": ".git/hooks/applypatch-msg.sample",
+      "bytes": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7"
+    },
+    {
+      "path": ".git/hooks/commit-msg.sample",
+      "bytes": 896,
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437"
+    },
+    {
+      "path": ".git/hooks/fsmonitor-watchman.sample",
+      "bytes": 4726,
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0"
+    },
+    {
+      "path": ".git/hooks/post-update.sample",
+      "bytes": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5"
+    },
+    {
+      "path": ".git/hooks/pre-applypatch.sample",
+      "bytes": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475"
+    },
+    {
+      "path": ".git/hooks/pre-commit.sample",
+      "bytes": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b"
+    },
+    {
+      "path": ".git/hooks/pre-merge-commit.sample",
+      "bytes": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53"
+    },
+    {
+      "path": ".git/hooks/pre-push.sample",
+      "bytes": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a"
+    },
+    {
+      "path": ".git/hooks/pre-rebase.sample",
+      "bytes": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3"
+    },
+    {
+      "path": ".git/hooks/pre-receive.sample",
+      "bytes": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989"
+    },
+    {
+      "path": ".git/hooks/prepare-commit-msg.sample",
+      "bytes": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619"
+    },
+    {
+      "path": ".git/hooks/push-to-checkout.sample",
+      "bytes": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f"
+    },
+    {
+      "path": ".git/hooks/sendemail-validate.sample",
+      "bytes": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92"
+    },
+    {
+      "path": ".git/hooks/update.sample",
+      "bytes": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106"
+    },
+    {
+      "path": ".git/index",
+      "bytes": 1251,
+      "sha256": "5ca7c474254c84ad18db59f2493765fecf906456409d1f08e71c28f3b59da2a3"
+    },
+    {
+      "path": ".git/info/exclude",
+      "bytes": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1"
+    },
+    {
+      "path": ".git/logs/HEAD",
+      "bytes": 369,
+      "sha256": "55160b29ab1374ff985f25984d7b06024e47d3c7e394d28083689462fb599ddb"
+    },
+    {
+      "path": ".git/logs/refs/heads/codex/work-2026-09-07",
+      "bytes": 195,
+      "sha256": "fb10c7ef2973ba7fa15b67bc93adb3c2a159e44c331084db39156820cd1353b9"
+    },
+    {
+      "path": ".git/logs/refs/heads/main",
+      "bytes": 185,
+      "sha256": "1c7f11682214f345a1399b13825ce226a4e872081ae3795a0f1eab1780c24f61"
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin/HEAD",
+      "bytes": 185,
+      "sha256": "1c7f11682214f345a1399b13825ce226a4e872081ae3795a0f1eab1780c24f61"
+    },
+    {
+      "path": ".git/objects/pack/pack-547adb03329130acc30af4ea34faa22db40f20be.idx",
+      "bytes": 1688,
+      "sha256": "e3652e8460d56708a759958a7b286585b7df46d4706a9a418103090cf565d91c"
+    },
+    {
+      "path": ".git/objects/pack/pack-547adb03329130acc30af4ea34faa22db40f20be.pack",
+      "bytes": 15800,
+      "sha256": "50dcdf9ce74ef2e89d49f383cdc18eb73107b8282f4523e37efa31679e176006"
+    },
+    {
+      "path": ".git/objects/pack/pack-547adb03329130acc30af4ea34faa22db40f20be.rev",
+      "bytes": 140,
+      "sha256": "523ab7b5ddeb66bd10dc5c01dfdc3397ae68eac6fedbceba63ab5c1f4d4df752"
+    },
+    {
+      "path": ".git/packed-refs",
+      "bytes": 195,
+      "sha256": "33a053dee6e5178fcedf674399d2b65e4ebeb550599968916f6f474ae08afb92"
+    },
+    {
+      "path": ".git/refs/heads/codex/work-2026-09-07",
+      "bytes": 41,
+      "sha256": "d2bed1631a8a0b4c0646b1ba53446039467ccdab0e75b790f95ded9da1caf90d"
+    },
+    {
+      "path": ".git/refs/heads/main",
+      "bytes": 41,
+      "sha256": "a5ca13559cf5c8de4d60474431c21dadb32037d39692e94638a04ebafaedd860"
+    },
+    {
+      "path": ".git/refs/remotes/origin/HEAD",
+      "bytes": 30,
+      "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 223,
+      "sha256": "bd1c731481e6508f8ce05f86e26a5661a6e3f40ace693da169a4e3cdc95a16f9"
+    },
+    {
+      "path": "docs/photometric_stereo_diligent.md",
+      "bytes": 4245,
+      "sha256": "ebea210bf679a873a655cc65acbd6aba8fc623e9305e925d6f3990335c97b5ae"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11285,
+      "sha256": "d65593fb8f82d41943459392efdcae743994c3b1095602c9fec1559fd81fbdd6"
+    },
+    {
+      "path": "references/diligent_main_l2_baseline.csv",
+      "bytes": 1676,
+      "sha256": "79c7d8077e6fbdc1390c9285a4fae7ad162b4ba1a47f353ace3dddbc3eaa8e59"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 52,
+      "sha256": "586dd43d0849aca371e55140f9a06fe8b9e12108c60498ce790f5caf993b8507"
+    },
+    {
+      "path": "src/fabloop/__init__.py",
+      "bytes": 39,
+      "sha256": "c1a0742666ed5d04f7110fae8c1546fa9c545c0b8a55e4d2848ad7160f861ba3"
+    },
+    {
+      "path": "src/fabloop/photometric_stereo/__init__.py",
+      "bytes": 46,
+      "sha256": "464a78582a14b96575c31475cc83aed8ff790d710f35fa03d348df89d5415860"
+    },
+    {
+      "path": "src/fabloop/photometric_stereo/diligent_validate.py",
+      "bytes": 25189,
+      "sha256": "db52cc91556c5a99a264229acd3ca29a89af9bb46f88cf3c293fba39135080fe"
+    },
+    {
+      "path": "tests/test_photometric_stereo_utils.py",
+      "bytes": 2463,
+      "sha256": "e5e387aa8ce79937cc51644f87f7f09d13418c2e400883bf8969fcb21cca7dec"
+    },
+    {
+      "path": "third_party/README.md",
+      "bytes": 389,
+      "sha256": "e4e0fd26905536ca431c4fee8a8e1975cb4b9b2eb305a2940b30038f6e1d8ea8"
+    }
+  ],
+  "mappings": {
+    "src/fabloop/__init__.py": "src/fabloop/__init__.py",
+    "src/fabloop/photometric_stereo/__init__.py": "src/fabloop/photometric_stereo/__init__.py",
+    "src/fabloop/photometric_stereo/diligent_validate.py": "src/fabloop/photometric_stereo/diligent_validate.py",
+    "tests/test_photometric_stereo_utils.py": "tests/test_photometric_stereo_utils.py",
+    "references/diligent_main_l2_baseline.csv": "references/diligent_main_l2_baseline.csv",
+    "docs/photometric_stereo_diligent.md": "docs/photometric_stereo_diligent.md",
+    "README.md": "docs/migration/FabLoop_original_README.md",
+    "requirements.txt": "docs/migration/FabLoop_original_requirements.txt",
+    "third_party/README.md": "docs/migration/FabLoop_original_third_party_README.md",
+    ".gitignore": "docs/migration/FabLoop_original_gitignore.txt"
+  },
+  "source_deleted": false,
+  "migrated_files_after_review": {
+    "src/fabloop/__init__.py": {
+      "destination": "src/fabloop/__init__.py",
+      "sha256": "c1a0742666ed5d04f7110fae8c1546fa9c545c0b8a55e4d2848ad7160f861ba3"
+    },
+    "src/fabloop/photometric_stereo/__init__.py": {
+      "destination": "src/fabloop/photometric_stereo/__init__.py",
+      "sha256": "464a78582a14b96575c31475cc83aed8ff790d710f35fa03d348df89d5415860"
+    },
+    "src/fabloop/photometric_stereo/diligent_validate.py": {
+      "destination": "src/fabloop/photometric_stereo/diligent_validate.py",
+      "sha256": "ef656ca350fc03316df87d457ce711c4bf76ed832b520187c70f7649eeca321a"
+    },
+    "tests/test_photometric_stereo_utils.py": {
+      "destination": "tests/test_photometric_stereo_utils.py",
+      "sha256": "6e4250f2f481577b5a63e9350d24ae9ab0e3cde784d31bb41c228e1a24ddcb15"
+    },
+    "references/diligent_main_l2_baseline.csv": {
+      "destination": "references/diligent_main_l2_baseline.csv",
+      "sha256": "79c7d8077e6fbdc1390c9285a4fae7ad162b4ba1a47f353ace3dddbc3eaa8e59"
+    },
+    "docs/photometric_stereo_diligent.md": {
+      "destination": "docs/photometric_stereo_diligent.md",
+      "sha256": "b9eccce2e1477e743863ba42938c779bc30280e4d692dad35e8570c273bee80d"
+    },
+    "README.md": {
+      "destination": "docs/migration/FabLoop_original_README.md",
+      "sha256": "d65593fb8f82d41943459392efdcae743994c3b1095602c9fec1559fd81fbdd6"
+    },
+    "requirements.txt": {
+      "destination": "docs/migration/FabLoop_original_requirements.txt",
+      "sha256": "586dd43d0849aca371e55140f9a06fe8b9e12108c60498ce790f5caf993b8507"
+    },
+    "third_party/README.md": {
+      "destination": "docs/migration/FabLoop_original_third_party_README.md",
+      "sha256": "e4e0fd26905536ca431c4fee8a8e1975cb4b9b2eb305a2940b30038f6e1d8ea8"
+    },
+    ".gitignore": {
+      "destination": "docs/migration/FabLoop_original_gitignore.txt",
+      "sha256": "bd1c731481e6508f8ce05f86e26a5661a6e3f40ace693da169a4e3cdc95a16f9"
+    }
+  },
+  "archive_and_source_reverified": true,
+  "original_location_removed": true,
+  "retired_directory": "archives/FabLoop_retired",
+  "retired_files_verified": true,
+  "removal_method": "non_destructive_archive_move",
+  "recursive_deletion_attempt": "blocked by policy",
+  "completed_at_utc": "2026-09-08T09:31:36.181714+00:00"
+}

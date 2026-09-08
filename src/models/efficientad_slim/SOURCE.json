@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-08T08:02:47.746597+00:00",
+  "status": "unmodified_baseline_snapshot_not_slimmed",
+  "distribution": "anomalib",
+  "version": "2.6.0",
+  "source_file": "anomalib/models/image/efficient_ad/torch_model.py",
+  "source_location": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\anomalib\\models\\image\\efficient_ad\\torch_model.py",
+  "destination": "src/models/efficientad_slim/torch_model.py",
+  "sha256": "8f80c2db5e546e5209f105c757d8c88c70c48e86bcf1d036b797fff88be3bd08",
+  "size_bytes": 28492,
+  "matches_installed_wheel_record": true,
+  "license": "Apache-2.0",
+  "torch_version": "2.11.0+cu128",
+  "torchvision_version": "0.26.0+cu128",
+  "frozen_contract": {
+    "teacher_output_channels": 384,
+    "student_output_channels": 768,
+    "student_groups": [
+      384,
+      384
+    ],
+    "autoencoder_output_channels": 384
+  },
+  "notes": [
+    "Source copied byte-for-byte; copyright and SPDX headers preserved.",
+    "Existing runtime still uses installed Anomalib via src/model.py.",
+    "Only internal Student/AE channel widths may change in a future variant.",
+    "Source hash is not a pretrained Teacher weights checksum."
+  ]
+}

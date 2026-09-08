@@ -1,0 +1,11 @@
+object,solver,image_count,mae_deg,source_url,notes
+ball,l2,96,4.10,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+cat,l2,96,8.41,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+pot1,l2,96,8.89,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+bear,l2,96,8.39,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+pot2,l2,96,14.65,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+buddha,l2,96,14.92,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+goblet,l2,96,18.50,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+reading,l2,96,19.80,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+cow,l2,96,25.60,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.
+harvest,l2,96,30.62,https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results,Official DiLiGenT main dataset summary row BASELINE.

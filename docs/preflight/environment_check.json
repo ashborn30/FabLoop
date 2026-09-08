@@ -1,0 +1,637 @@
+{
+  "created_at": "2026-09-08T07:34:57.916768+00:00",
+  "root": "D:\\Visual studio code\\FabLoop_VJSS26",
+  "python": "3.12.13 (main, Mar 24 2026, 22:57:53) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Scripts\\python.exe",
+  "venv": true,
+  "packages_valid": true,
+  "environment_valid": true,
+  "pipeline_ready": false,
+  "status_counts": {
+    "PASS": 53,
+    "BLOCKED_DATA": 20,
+    "INFO": 4
+  },
+  "scope": "Import/signature/config/file checks only; no training or inference",
+  "limitations": [
+    "pipeline_ready covers configured inputs; Imagenette may download when training later runs. No pipeline stage runs during this check.",
+    "Model construction, checkpoint contents, GPU kernels and model outputs are untested.",
+    "Dataset files are checked by path, not decoded or loaded into datamodules.",
+    "EfficientAD teacher download/cache and existing trained outputs are not validated."
+  ],
+  "checks": [
+    {
+      "name": "src.syntax.anomaly",
+      "status": "PASS",
+      "details": {
+        "file": "src\\anomaly.py"
+      }
+    },
+    {
+      "name": "src.syntax.benchmarker",
+      "status": "PASS",
+      "details": {
+        "file": "src\\benchmarker.py"
+      }
+    },
+    {
+      "name": "src.syntax.calibrator",
+      "status": "PASS",
+      "details": {
+        "file": "src\\calibrator.py"
+      }
+    },
+    {
+      "name": "src.syntax.data",
+      "status": "PASS",
+      "details": {
+        "file": "src\\data.py"
+      }
+    },
+    {
+      "name": "src.syntax.evaluator",
+      "status": "PASS",
+      "details": {
+        "file": "src\\evaluator.py"
+      }
+    },
+    {
+      "name": "src.syntax.model",
+      "status": "PASS",
+      "details": {
+        "file": "src\\model.py"
+      }
+    },
+    {
+      "name": "src.syntax.reporter",
+      "status": "PASS",
+      "details": {
+        "file": "src\\reporter.py"
+      }
+    },
+    {
+      "name": "src.syntax.sam_refiner",
+      "status": "PASS",
+      "details": {
+        "file": "src\\sam_refiner.py"
+      }
+    },
+    {
+      "name": "src.syntax.trainer",
+      "status": "PASS",
+      "details": {
+        "file": "src\\trainer.py"
+      }
+    },
+    {
+      "name": "src.syntax.validator",
+      "status": "PASS",
+      "details": {
+        "file": "src\\validator.py"
+      }
+    },
+    {
+      "name": "import.torch",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\torch\\__init__.py",
+        "version": "2.11.0+cu128"
+      }
+    },
+    {
+      "name": "import.torchvision",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\torchvision\\__init__.py",
+        "version": "0.26.0+cu128"
+      }
+    },
+    {
+      "name": "import.torchaudio",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\torchaudio\\__init__.py",
+        "version": "2.11.0+cu128"
+      }
+    },
+    {
+      "name": "import.anomalib",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\anomalib\\__init__.py",
+        "version": "2.6.0"
+      }
+    },
+    {
+      "name": "import.lightning",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\lightning\\__init__.py",
+        "version": "2.6.5"
+      }
+    },
+    {
+      "name": "import.torchmetrics",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\torchmetrics\\__init__.py",
+        "version": "1.9.0"
+      }
+    },
+    {
+      "name": "import.numpy",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\numpy\\__init__.py",
+        "version": "1.26.4"
+      }
+    },
+    {
+      "name": "import.pandas",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\pandas\\__init__.py",
+        "version": "3.0.5"
+      }
+    },
+    {
+      "name": "import.cv2",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\cv2\\__init__.py",
+        "version": "4.11.0.86"
+      }
+    },
+    {
+      "name": "import.PIL",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\PIL\\__init__.py",
+        "version": "12.3.0"
+      }
+    },
+    {
+      "name": "import.yaml",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\yaml\\__init__.py",
+        "version": "6.0.3"
+      }
+    },
+    {
+      "name": "import.sklearn",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\sklearn\\__init__.py",
+        "version": "1.9.0"
+      }
+    },
+    {
+      "name": "import.scipy",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\scipy\\__init__.py",
+        "version": "1.17.1"
+      }
+    },
+    {
+      "name": "import.timm",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\timm\\__init__.py",
+        "version": "1.0.28"
+      }
+    },
+    {
+      "name": "import.pycocotools.mask",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\pycocotools\\mask.py",
+        "version": "2.0.11"
+      }
+    },
+    {
+      "name": "import.triton",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\triton\\__init__.py",
+        "version": "3.6.0.post26"
+      }
+    },
+    {
+      "name": "import.PySide6.QtWidgets",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\PySide6\\QtWidgets.pyd",
+        "version": "6.11.2"
+      }
+    },
+    {
+      "name": "import.pyqtgraph",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\pyqtgraph\\__init__.py",
+        "version": "0.14.0"
+      }
+    },
+    {
+      "name": "import.OpenGL.GL",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\.venv\\Lib\\site-packages\\OpenGL\\GL\\__init__.py",
+        "version": "3.1.10"
+      }
+    },
+    {
+      "name": "import.anomaly",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\anomaly.py"
+      }
+    },
+    {
+      "name": "import.benchmarker",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\benchmarker.py"
+      }
+    },
+    {
+      "name": "import.calibrator",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\calibrator.py"
+      }
+    },
+    {
+      "name": "import.data",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\data.py"
+      }
+    },
+    {
+      "name": "import.evaluator",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\evaluator.py"
+      }
+    },
+    {
+      "name": "import.model",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\model.py"
+      }
+    },
+    {
+      "name": "import.reporter",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\reporter.py"
+      }
+    },
+    {
+      "name": "import.sam_refiner",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\sam_refiner.py"
+      }
+    },
+    {
+      "name": "import.trainer",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\trainer.py"
+      }
+    },
+    {
+      "name": "import.validator",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\src\\validator.py"
+      }
+    },
+    {
+      "name": "import.sam3",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Visual studio code\\FabLoop_VJSS26\\third-party\\SAM3\\sam3\\__init__.py",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "sam3.editable_registration",
+      "status": "PASS",
+      "details": {
+        "module": "D:\\Visual studio code\\FabLoop_VJSS26\\third-party\\SAM3\\sam3\\__init__.py",
+        "direct_url": {
+          "url": "file:///D:/Visual%20studio%20code/FabLoop_VJSS26/third-party/SAM3",
+          "dir_info": {
+            "editable": true
+          }
+        }
+      }
+    },
+    {
+      "name": "contract.EfficientAd",
+      "status": "PASS",
+      "details": {
+        "signature": "(imagenet_dir: pathlib.Path | str = './datasets/imagenette', teacher_out_channels: int = 384, model_size: anomalib.models.image.efficient_ad.torch_model.EfficientAdModelSize | str = <EfficientAdModelSize.S: 'small'>, lr: float = 0.0001, weight_decay: float = 1e-05, padding: bool = False, pad_maps: bool = True, pre_processor: anomalib.pre_processing.pre_processor.PreProcessor | bool = True, post_processor: anomalib.post_processing.post_processor.PostProcessor | bool = True, evaluator: anomalib.metrics.evaluator.Evaluator | bool = True, visualizer: anomalib.visualization.base.Visualizer | bool = True) -> None",
+        "source_calls_checked": 1
+      }
+    },
+    {
+      "name": "contract.build_sam3_image_model",
+      "status": "PASS",
+      "details": {
+        "signature": "(bpe_path=None, device='cuda', eval_mode=True, checkpoint_path=None, load_from_HF=True, enable_segmentation=True, enable_inst_interactivity=False, compile=False)",
+        "source_calls_checked": 1
+      }
+    },
+    {
+      "name": "contract.Sam3Processor",
+      "status": "PASS",
+      "details": {
+        "signature": "(model, resolution=1008, device='cuda', confidence_threshold=0.5)",
+        "source_calls_checked": 1
+      }
+    },
+    {
+      "name": "contract.predict_inst",
+      "status": "PASS",
+      "details": {
+        "signature": "(self, inference_state, **kwargs) -> Tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]",
+        "source_calls_checked": 2,
+        "forwarded_signature": "(self, point_coords: Optional[numpy.ndarray] = None, point_labels: Optional[numpy.ndarray] = None, box: Optional[numpy.ndarray] = None, mask_input: Optional[numpy.ndarray] = None, multimask_output: bool = True, return_logits: bool = False, normalize_coords=True) -> Tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]"
+      }
+    },
+    {
+      "name": "config.efficientad",
+      "status": "PASS",
+      "details": {
+        "file": "configs\\efficientad.yaml"
+      }
+    },
+    {
+      "name": "config.pushpins",
+      "status": "PASS",
+      "details": {
+        "file": "configs\\pushpins.yaml"
+      }
+    },
+    {
+      "name": "config.splicing_connectors",
+      "status": "PASS",
+      "details": {
+        "file": "configs\\splicing_connectors.yaml"
+      }
+    },
+    {
+      "name": "config.transistor",
+      "status": "PASS",
+      "details": {
+        "file": "configs\\transistor.yaml"
+      }
+    },
+    {
+      "name": "cuda.inspect",
+      "status": "PASS",
+      "details": {
+        "available": true,
+        "torch_version": "2.11.0+cu128",
+        "cuda_version": "12.8",
+        "devices": [
+          {
+            "index": 0,
+            "name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+            "total_memory_bytes": 4294443008,
+            "compute_capability": [
+              8,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "configs\\efficientad.yaml.dataset_root",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\visa",
+      "exists": false
+    },
+    {
+      "name": "configs\\efficientad.yaml.imagenette",
+      "status": "INFO",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\imagenette",
+      "exists": false,
+      "availability": "DOWNLOAD_ON_TRAIN"
+    },
+    {
+      "name": "configs\\efficientad.yaml.sam_checkpoint",
+      "status": "PASS",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\third-party\\SAM3\\checkpoints\\sam3.pt",
+      "exists": true,
+      "size_bytes": 3450062241
+    },
+    {
+      "name": "configs\\efficientad.yaml.split_csv",
+      "status": "PASS",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\third-party\\spot-diff\\split_csv\\1cls.csv",
+      "exists": true,
+      "size_bytes": 660329
+    },
+    {
+      "name": "configs\\efficientad.yaml.csv_integrity",
+      "status": "PASS",
+      "total_rows": 10821,
+      "pcb_counts": {
+        "pcb1": {
+          "train_normal": 904,
+          "test_normal": 100,
+          "test_anomaly": 100
+        },
+        "pcb2": {
+          "train_normal": 901,
+          "test_normal": 100,
+          "test_anomaly": 100
+        },
+        "pcb3": {
+          "train_normal": 905,
+          "test_normal": 101,
+          "test_anomaly": 100
+        },
+        "pcb4": {
+          "train_normal": 904,
+          "test_normal": 101,
+          "test_anomaly": 100
+        }
+      },
+      "unsafe_count": 0,
+      "unsafe_preview": [],
+      "duplicate_count": 0,
+      "duplicate_preview": [],
+      "invalid_label_split_rows": [],
+      "missing_groups": []
+    },
+    {
+      "name": "configs\\efficientad.yaml.csv_referenced_files",
+      "status": "BLOCKED_DATA",
+      "missing_images": 4416,
+      "missing_masks": 400,
+      "missing_image_preview": [
+        "pcb1/Data/Images/Normal/0499.JPG",
+        "pcb1/Data/Images/Normal/0165.JPG",
+        "pcb1/Data/Images/Normal/0650.JPG",
+        "pcb1/Data/Images/Normal/0154.JPG",
+        "pcb1/Data/Images/Normal/0713.JPG",
+        "pcb1/Data/Images/Normal/0083.JPG",
+        "pcb1/Data/Images/Normal/0067.JPG",
+        "pcb1/Data/Images/Normal/0341.JPG",
+        "pcb1/Data/Images/Normal/0524.JPG",
+        "pcb1/Data/Images/Normal/0141.JPG"
+      ],
+      "missing_mask_preview": [
+        "pcb1/Data/Masks/Anomaly/000.png",
+        "pcb1/Data/Masks/Anomaly/001.png",
+        "pcb1/Data/Masks/Anomaly/002.png",
+        "pcb1/Data/Masks/Anomaly/003.png",
+        "pcb1/Data/Masks/Anomaly/004.png",
+        "pcb1/Data/Masks/Anomaly/005.png",
+        "pcb1/Data/Masks/Anomaly/006.png",
+        "pcb1/Data/Masks/Anomaly/007.png",
+        "pcb1/Data/Masks/Anomaly/008.png",
+        "pcb1/Data/Masks/Anomaly/009.png"
+      ]
+    },
+    {
+      "name": "configs\\pushpins.yaml.dataset_root",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco",
+      "exists": false
+    },
+    {
+      "name": "configs\\pushpins.yaml.imagenette",
+      "status": "INFO",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\imagenette",
+      "exists": false,
+      "availability": "DOWNLOAD_ON_TRAIN"
+    },
+    {
+      "name": "configs\\pushpins.yaml.train/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\pushpins\\train\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\pushpins.yaml.test/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\pushpins\\test\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\pushpins.yaml.ground_truth",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\pushpins\\ground_truth",
+      "exists": false
+    },
+    {
+      "name": "configs\\pushpins.yaml.validation/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\pushpins\\validation\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\pushpins.yaml.test/logical_anomalies",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\pushpins\\test\\logical_anomalies",
+      "exists": false
+    },
+    {
+      "name": "configs\\pushpins.yaml.test/structural_anomalies",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\pushpins\\test\\structural_anomalies",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.dataset_root",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.imagenette",
+      "status": "INFO",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\imagenette",
+      "exists": false,
+      "availability": "DOWNLOAD_ON_TRAIN"
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.train/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\splicing_connectors\\train\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.test/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\splicing_connectors\\test\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.ground_truth",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\splicing_connectors\\ground_truth",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.validation/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\splicing_connectors\\validation\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.test/logical_anomalies",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\splicing_connectors\\test\\logical_anomalies",
+      "exists": false
+    },
+    {
+      "name": "configs\\splicing_connectors.yaml.test/structural_anomalies",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_loco\\splicing_connectors\\test\\structural_anomalies",
+      "exists": false
+    },
+    {
+      "name": "configs\\transistor.yaml.dataset_root",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_ad",
+      "exists": false
+    },
+    {
+      "name": "configs\\transistor.yaml.imagenette",
+      "status": "INFO",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\imagenette",
+      "exists": false,
+      "availability": "DOWNLOAD_ON_TRAIN"
+    },
+    {
+      "name": "configs\\transistor.yaml.train/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_ad\\transistor\\train\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\transistor.yaml.test/good",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_ad\\transistor\\test\\good",
+      "exists": false
+    },
+    {
+      "name": "configs\\transistor.yaml.ground_truth",
+      "status": "BLOCKED_DATA",
+      "path": "D:\\Visual studio code\\FabLoop_VJSS26\\data\\mvtec_ad\\transistor\\ground_truth",
+      "exists": false
+    }
+  ]
+}

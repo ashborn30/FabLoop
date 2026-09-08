@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "instructions": "Enter verified labels, split, category, and physical_board_id. Keep every related view/crop in one split. Folder names do not establish physical identity.",
+  "records": [
+    {
+      "board_group_id": "PCB1",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB2",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB3",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB4",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB5",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB6",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB7",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB8",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB9",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB10",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB11",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB12",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB13",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB14",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB15",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB16",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB17",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB18",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB19",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB20",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB21",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB22",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB23",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB24",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB25",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB26",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB27",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB28",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB29",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB30",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB31",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB32",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB33",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    },
+    {
+      "board_group_id": "PCB34",
+      "physical_board_id": null,
+      "category": null,
+      "label": "unknown",
+      "split": "unknown"
+    }
+  ]
+}

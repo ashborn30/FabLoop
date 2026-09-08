@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "registration_verified": false,
+  "calibrated": false,
+  "coordinate_frame": "x_right_y_down_z_towards_camera",
+  "light_order": ["F", "B", "L", "R"],
+  "images": {"F": null, "B": null, "L": null, "R": null},
+  "mask": null,
+  "light_directions": null,
+  "light_intensities": null,
+  "image_linearity": null,
+  "ambient_path": null,
+  "instructions": [
+    "This template is intentionally blocked until measured metadata and explicit verification are supplied.",
+    "Image and mask paths are relative to this JSON file; use four distinct registered RGB images and a nonempty single-channel mask of identical spatial size.",
+    "Fill light_directions with measured 4x3 vectors in F, B, L, R order and the declared coordinate frame. Geometry must have rank 3; vectors are normalized to unit length.",
+    "Fill light_intensities with measured positive 4x3 RGB intensities in F, B, L, R order, consistent with the observation exposure and channel response.",
+    "Declare image_linearity as linear or srgb; integer RGB inputs are normalized by dtype full scale and floating inputs must be in [0,1].",
+    "Set registration_verified and calibrated true only after verification; this script does not register, resize or infer lighting.",
+    "Ambient subtraction is not implemented. Supply already ambient-corrected or ambient-negligible observations; leave ambient_path null.",
+    "Relative height is in pixel units, not metric metrology. No ground truth, label or train/test split is required or inferred."
+  ]
+}

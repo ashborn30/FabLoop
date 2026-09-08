@@ -1,0 +1,91 @@
+{
+  "verified_at_utc": "2026-09-08T09:19:59.680696+00:00",
+  "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+  "source_table": "Main dataset / BASELINE",
+  "status": "VERIFIED_MATCH",
+  "row_text": "BASELINE 4.10 8.41 8.89 8.39 14.65 14.92 18.50 19.80 25.60 30.62",
+  "csv_sha256": "79c7d8077e6fbdc1390c9285a4fae7ad162b4ba1a47f353ace3dddbc3eaa8e59",
+  "records": [
+    {
+      "object": "ball",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "4.10",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "cat",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "8.41",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "pot1",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "8.89",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "bear",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "8.39",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "pot2",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "14.65",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "buddha",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "14.92",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "goblet",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "18.50",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "reading",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "19.80",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "cow",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "25.60",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    },
+    {
+      "object": "harvest",
+      "solver": "l2",
+      "image_count": "96",
+      "mae_deg": "30.62",
+      "source_url": "https://sites.google.com/site/photometricstereodata/single/summary-of-benchmarking-results",
+      "notes": "Official DiLiGenT main dataset summary row BASELINE."
+    }
+  ],
+  "scope": "Published L2 with all 96 observations only. No published four-light reference is asserted."
+}

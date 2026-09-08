@@ -1,0 +1,127 @@
+{
+  "created_at_utc": "2026-09-08T08:53:12.685044+00:00",
+  "status": "PASS",
+  "profile_command": ".venv/Scripts/python.exe -B scripts/profile_efficientad_slim.py",
+  "profile_exit_code": 0,
+  "profile_file": "docs/preflight/efficientad_slim_05_profile.json",
+  "profile_sha256": "667929f028ed3118b3b5fbb219b3901f4f9e1736ac0c75a5576c0194732d1a6a",
+  "shared_input": {
+    "shape": [
+      1,
+      3,
+      256,
+      256
+    ],
+    "sha256_float32_bytes": "974b7580f20c6c574a2cb3e1ac32ae13a7cd46ba726b36f996c0a731110193bb",
+    "generation": "torch.rand with a dedicated CPU generator; uniform [0, 1)",
+    "seed": 42,
+    "same_tensor_used_for_both_profiles": true
+  },
+  "student_compression_gate": {
+    "status": "PASS",
+    "applies_to": "Student only; the deployment core is reported separately",
+    "parameters_fraction_min": 0.4,
+    "supported_flops_fraction_min": 0.3,
+    "parameters_passed": true,
+    "supported_flops_passed": true,
+    "passed": true,
+    "decision": "PROCEED_TO_TRAINING_INTEGRATION",
+    "flops_scope": "fvcore-supported FLOPs with unmodified default handlers; one multiply-add is one FLOP. Unsupported operator occurrences are reported for each module in both profiles."
+  },
+  "reductions": {
+    "student_only": {
+      "parameters": {
+        "baseline": 4267392,
+        "candidate": 1855552,
+        "reduction_absolute": 2411840,
+        "reduction_fraction": 0.5651789195836707,
+        "reduction_percent": 56.51789195836707
+      },
+      "supported_flops": {
+        "baseline": 20243404800,
+        "candidate": 7625419776,
+        "reduction_absolute": 12617985024,
+        "reduction_fraction": 0.6233133777969998,
+        "reduction_percent": 62.33133777969998
+      },
+      "convolution_flops": {
+        "baseline": 20243404800,
+        "candidate": 7625419776,
+        "reduction_absolute": 12617985024,
+        "reduction_fraction": 0.6233133777969998,
+        "reduction_percent": 62.33133777969998
+      }
+    },
+    "autoencoder_only": {
+      "parameters": {
+        "baseline": 1096320,
+        "candidate": 330240,
+        "reduction_absolute": 766080,
+        "reduction_fraction": 0.6987740805604203,
+        "reduction_percent": 69.87740805604203
+      },
+      "supported_flops": {
+        "baseline": 2399267840,
+        "candidate": 781088256,
+        "reduction_absolute": 1618179584,
+        "reduction_fraction": 0.6744472447061184,
+        "reduction_percent": 67.44472447061185
+      },
+      "convolution_flops": {
+        "baseline": 2392981504,
+        "candidate": 777945088,
+        "reduction_absolute": 1615036416,
+        "reduction_fraction": 0.674905515692611,
+        "reduction_percent": 67.4905515692611
+      }
+    },
+    "deployment_core_teacher_student_autoencoder": {
+      "parameters": {
+        "baseline": 8057856,
+        "candidate": 4879936,
+        "reduction_absolute": 3177920,
+        "reduction_fraction": 0.3943877875206507,
+        "reduction_percent": 39.43877875206507
+      },
+      "supported_flops": {
+        "baseline": 37953575936,
+        "candidate": 23717411328,
+        "reduction_absolute": 14236164608,
+        "reduction_fraction": 0.37509415797884305,
+        "reduction_percent": 37.5094157978843
+      },
+      "convolution_flops": {
+        "baseline": 37947289600,
+        "candidate": 23714268160,
+        "reduction_absolute": 14233021440,
+        "reduction_fraction": 0.3750734661165366,
+        "reduction_percent": 37.50734661165366
+      }
+    }
+  },
+  "teacher_unchanged": {
+    "parameters": true,
+    "supported_flops": true,
+    "convolution_flops": true,
+    "output_shape": true
+  },
+  "tests": {
+    "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -p \"test_*.py\" -v",
+    "count": 19,
+    "elapsed_seconds": 7.592,
+    "result": "PASS",
+    "compression_gate_tests": 5,
+    "compression_gate_coverage": [
+      "Student exactly at both inclusive thresholds passes",
+      "Student parameters below target fail despite whole-pipeline reduction",
+      "Student FLOPs below target fail despite whole-pipeline reduction",
+      "Failed CLI gate saves JSON and returns 1",
+      "Passed CLI gate saves JSON and returns 0"
+    ]
+  },
+  "architecture_changed_in_step_4": false,
+  "pipeline_training_run": false,
+  "pretrained_weights_loaded": false,
+  "loss_formulas_changed": false,
+  "scope": "fvcore-supported Teacher/Student/AE feature-network forwards; see profile counting_policy"
+}

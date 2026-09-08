@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-09-08T08:22:03.875285+00:00",
+  "architecture_id": "efficientad-s-slim-0.5",
+  "candidate_not_final": true,
+  "command": ".venv/Scripts/python.exe -B -m unittest discover -s tests -p test_efficientad_slim.py -v",
+  "test_file_sha256": "7f3ac3c241571841801828453a3ea9aeea7f1c15c5463c0fa01fbd4c6f51e193",
+  "result": "PASS",
+  "tests_run": 7,
+  "test_elapsed_seconds": 7.277,
+  "checks": [
+    "frozen source SHA matches manifest",
+    "exact internal widths and unchanged layer geometry/forward methods",
+    "unchanged seeded Teacher weights and frozen/eval modes",
+    "384/768/384 features and matching spatial sizes, padding off/on, square/rectangular input",
+    "finite original losses and backward gradients for both Student heads and AE; no Teacher gradient",
+    "original-core raw/calibrated map parity and strict state roundtrip",
+    "invalid feature widths and full baseline state rejected"
+  ],
+  "source_sha256": "8f80c2db5e546e5209f105c757d8c88c70c48e86bcf1d036b797fff88be3bd08",
+  "site_packages_source_unchanged": true,
+  "candidate_sha256": "215c0cb33efd9851035e60e14d9ffc80f479762b20465643b40edbd0c34068a2",
+  "profile_report": "docs/preflight/efficientad_slim_05_profile.json",
+  "student_compression_gate_passed": true,
+  "scope": "Synthetic CPU forward/backward checks only; no optimizer steps, pretrained weights loading, dataset inference, or pipeline training.",
+  "remaining": "Architecture factory/checkpoint provenance/output separation/data integration are later steps; active pipeline remains baseline."
+}

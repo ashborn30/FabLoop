@@ -1,0 +1,12 @@
+{
+  "imagecodecs_png_roundtrip": "PASS",
+  "tifffile_deflate_roundtrip": "PASS",
+  "cuda_tensor_arithmetic": "PASS",
+  "torchvision_cuda_nms": "PASS",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "scope": "Synthetic codec roundtrips, tiny CUDA operators, and SAM3 Triton kernels on a 32x32 synthetic mask; no model loading, training or inference.",
+  "sam3_triton_connected_components": "PASS",
+  "sam3_triton_edt_vs_scipy": "PASS"
+}
